@@ -1,0 +1,29 @@
+{
+  "name": "blank-express",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc && bun build src/index.ts --outdir ./dist --target bun --format esm",
+    "cfu": "ncu",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run dist/index.js",
+    "update-all": "ncu -u"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.11",
+    "@types/bun": "^1.3.12",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "npm-check-updates": "^20.0.2",
+    "typescript": "^6.0.2"
+  }
+}
